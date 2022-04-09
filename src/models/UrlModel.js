@@ -4,13 +4,13 @@ const mongoose = require('mongoose')
 const urlSchema = new mongoose.Schema({
     longUrl: {
         type:String,
-        required:true, 
-        unique:true
+        required:true
+        
     }, 
     shortUrl: {
         type:String,
         required:true, 
-        unique:true
+       unique:true
     },
     urlCode: { 
         type:String,
@@ -23,4 +23,4 @@ const urlSchema = new mongoose.Schema({
 
 
 
-module.exports = mongoose.model('Creaturl', urlSchema)
+module.exports = mongoose.model('urlcreate', urlSchema)
